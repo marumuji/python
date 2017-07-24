@@ -1,5 +1,4 @@
 def checkio(args):
-    items = {}
     result = None
     for i in range(97, 97+26):
         if result == None:
@@ -7,15 +6,6 @@ def checkio(args):
         elif args.lower().count(result) < args.lower().count(chr(i)):
             result = chr(i)
     print(result)
-        # items[chr(i)] = args.lower().count(chr(i))
-
-    # for key, value in items.items():
-    #     if result == None:
-    #         result = key
-    #     elif items[result] < value:
-    #         result = key
-    # print(result)
-
 
 
 checkio("Hello World!")
